@@ -35,12 +35,11 @@ int main(int argc, char** argv) {
   std::vector<double> x_next(static_cast<size_t>(N), 0.0);
   bool done = false;
   iterations = 0;
+  double s = 0.0;
+  double diff = 0.0;
 
-  #pragma omp parallel shared(x, x_next, done, iterations)
+  #pragma omp parallel shared(x, x_next, done, iterations, s, diff)
   {
-    double s = 0.0;
-    double diff = 0.0;
-
     for (int it = 0; it < max_iter; ++it) {
 #pragma omp single
       {
