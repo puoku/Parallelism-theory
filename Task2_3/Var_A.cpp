@@ -34,8 +34,6 @@ int main(int argc, char** argv) {
 
   std::vector<double> x(static_cast<size_t>(N), 0.0);
   std::vector<double> x_next(static_cast<size_t>(N), 0.0);
-  iterations = 0;
-  diff = 0.0;
 
   for (int it = 0; it < max_iter; ++it) {
     double s = 0.0;

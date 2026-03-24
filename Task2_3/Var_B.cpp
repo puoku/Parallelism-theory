@@ -34,7 +34,6 @@ int main(int argc, char** argv) {
   std::vector<double> x(static_cast<size_t>(N), 0.0);
   std::vector<double> x_next(static_cast<size_t>(N), 0.0);
   bool done = false;
-  iterations = 0;
   double s = 0.0;
   double diff = 0.0;
 
