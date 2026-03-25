@@ -10,7 +10,7 @@ THREADS="${THREADS:-16}"
 TAU_SCALE="${TAU_SCALE:-0.10}"
 EPS="${EPS:-1e-5}"
 MAX_ITER="${MAX_ITER:-200000}"
-SCHEDULES="${SCHEDULES:-static:0 dynamic:100 dynamic:1000 guided:100 guided:1000}"
+SCHEDULES="${SCHEDULES:-static:0 dynamic:10 dynamic:25 dynamic:50 dynamic:85 dynamic:100 guided:10 guided:25 guided:50 guided:85 guided:100}"
 
 mkdir -p "$RESULTS_DIR"
 
