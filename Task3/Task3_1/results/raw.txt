@@ -1,0 +1,8 @@
+N=200 threads=1 run=1 N=200 threads=1 init_s=0.000077 matvec_s=0.000057 total_s=0.000134 checksum=287.519117
+N=200 threads=1 run=2 N=200 threads=1 init_s=0.000078 matvec_s=0.000063 total_s=0.000141 checksum=287.519117
+N=200 threads=2 run=1 N=200 threads=2 init_s=0.000101 matvec_s=0.000068 total_s=0.000169 checksum=287.519117
+N=200 threads=2 run=2 N=200 threads=2 init_s=0.000053 matvec_s=0.000047 total_s=0.000100 checksum=287.519117
+N=400 threads=1 run=1 N=400 threads=1 init_s=0.000153 matvec_s=0.000111 total_s=0.000264 checksum=577.380427
+N=400 threads=1 run=2 N=400 threads=1 init_s=0.000184 matvec_s=0.000113 total_s=0.000298 checksum=577.380427
+N=400 threads=2 run=1 N=400 threads=2 init_s=0.000108 matvec_s=0.000076 total_s=0.000184 checksum=577.380427
+N=400 threads=2 run=2 N=400 threads=2 init_s=0.000131 matvec_s=0.000105 total_s=0.000236 checksum=577.380427

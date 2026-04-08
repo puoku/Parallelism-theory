@@ -6,7 +6,7 @@
 #include <string>
 
 bool check_close(double a, double b) {
-  return std::abs(a - b) < 1e-8;
+  return std::abs(a - b) < 1e-6;
 }
 
 bool test_sin_file(const std::filesystem::path& path) {

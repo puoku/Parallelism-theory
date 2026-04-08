@@ -1,0 +1,9 @@
+group=task3_1, variant=matvec_threads, size=200
+threads,runs,max_time_s,avg_time_s,speedup,efficiency,karp_flatt
+1,2,0.000141,0.000134,1.000000,1.000000,-
+2,2,0.000169,0.000100,1.340000,0.670000,0.492537
+
+group=task3_1, variant=matvec_threads, size=400
+threads,runs,max_time_s,avg_time_s,speedup,efficiency,karp_flatt
+1,2,0.000298,0.000264,1.000000,1.000000,-
+2,2,0.000236,0.000184,1.434783,0.717391,0.393939
