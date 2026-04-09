@@ -57,6 +57,12 @@ python3 "$ROOT_DIR/../../benchmark_tools/analyze_bench.py" \
 
 python3 "$ROOT_DIR/format_benchmark_table.py" \
   --summary "$RESULTS_DIR/summary.csv" \
+  --mode avg \
+  --output "$RESULTS_DIR/table_avg.txt"
+
+python3 "$ROOT_DIR/format_benchmark_table.py" \
+  --summary "$RESULTS_DIR/summary.csv" \
+  --mode median \
   --output "$RESULTS_DIR/table.txt"
 
 echo "Done."
@@ -64,4 +70,8 @@ echo "Results:"
 echo "  $RAW_CSV"
 echo "  $RESULTS_DIR/summary.csv"
 echo "  $RESULTS_DIR/summary.txt"
+echo "  $RESULTS_DIR/table_avg.txt"
 echo "  $RESULTS_DIR/table.txt"
+for size in $SIZES; do
+  echo "  $RESULTS_DIR/metrics_size_${size}.txt"
+done
